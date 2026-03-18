@@ -1,17 +1,285 @@
-<!DOCTYPE html>
-<html lang="cs">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>VeselyLab</title>
-  
-  <link rel="stylesheet" href="styles.css">
+<!-- SEO Meta Tags -->
+<title>Landing Page - Mar 16, 2026</title>
+<meta property="og:title" content="Landing Page - Mar 16, 2026" />
+<meta property="og:type" content="website" />
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:title" content="Landing Page - Mar 16, 2026" />
+<!-- End SEO Meta Tags -->
+
 </head>
-<body>
-  <div class="container">
-    <span class="badge">Hello World</span>
-    <h1>VeselyLab 🚀</h1>
-    <p>GitHub Pages integrace funguje!</p>
-  </div>
-</body>
-</html>
+export default function VeselyLabLandingPage() {
+  const features = [
+    {
+      title: "AI Agents That Work",
+      text: "Deploy chat and voice agents that qualify leads, answer support questions, and trigger workflows across your stack.",
+      tag: "Execution-first",
+    },
+    {
+      title: "Designed for Real Operations",
+      text: "From web and WhatsApp to phone and CRM, VeselyLab turns AI into a dependable operating layer for growth.",
+      tag: "Multi-channel",
+    },
+    {
+      title: "Templates You Can Scale",
+      text: "Start from proven use-case blueprints for support, frontdesk, sales qualification, and follow-up automation.",
+      tag: "Productized",
+    },
+  ];
+
+  const useCases = [
+    "AI Receptionist",
+    "Voice Frontdesk",
+    "Lead Qualification",
+    "Support Automation",
+    "Follow-up Engine",
+    "CRM Workflow Layer",
+  ];
+
+  const steps = [
+    {
+      n: "01",
+      title: "Map the workflow",
+      text: "Identify the customer journey, operational bottlenecks, and human handoff points.",
+    },
+    {
+      n: "02",
+      title: "Deploy the agent",
+      text: "Launch a branded AI experience across web, messaging, and voice with clear rules and business goals.",
+    },
+    {
+      n: "03",
+      title: "Scale with templates",
+      text: "Standardize what works into reusable vertical playbooks and repeatable delivery systems.",
+    },
+  ];
+
+  return (
+    <div className="min-h-screen bg-zinc-950 text-zinc-100 selection:bg-cyan-300/30 selection:text-white">
+      <div className="absolute inset-0 -z-10 bg-[radial-gradient(circle_at_top,rgba(34,211,238,0.14),transparent_28%),radial-gradient(circle_at_80%_20%,rgba(161,161,170,0.12),transparent_22%)]" />
+
+      <header className="sticky top-0 z-30 border-b border-white/10 bg-zinc-950/80 backdrop-blur-xl">
+        <div className="mx-auto flex max-w-7xl items-center justify-between px-6 py-4 lg:px-10">
+          <div className="flex items-center gap-3">
+            <div className="h-3 w-3 rounded-full bg-cyan-300" />
+            <span className="text-sm font-medium tracking-[0.22em] text-zinc-300 uppercase">
+              VeselyLab
+            </span>
+          </div>
+          <nav className="hidden items-center gap-8 text-sm text-zinc-400 md:flex">
+            <a href="#capabilities" className="transition hover:text-white">
+              Capabilities
+            </a>
+            <a href="#system" className="transition hover:text-white">
+              System
+            </a>
+            <a href="#contact" className="transition hover:text-white">
+              Contact
+            </a>
+          </nav>
+          <button className="rounded-full border border-white/15 bg-white/5 px-4 py-2 text-sm font-medium text-white transition hover:border-cyan-300/50 hover:bg-white/10">
+            Book intro call
+          </button>
+        </div>
+      </header>
+
+      <main>
+        <section className="mx-auto grid max-w-7xl gap-14 px-6 pb-20 pt-20 lg:grid-cols-[1.2fr_0.8fr] lg:px-10 lg:pb-28 lg:pt-28">
+          <div>
+            <div className="mb-6 inline-flex items-center gap-2 rounded-full border border-cyan-300/20 bg-cyan-300/10 px-4 py-2 text-xs font-medium uppercase tracking-[0.2em] text-cyan-200">
+              AI lab for production-grade systems
+            </div>
+            <h1 className="max-w-4xl text-5xl font-semibold leading-tight tracking-tight text-white md:text-7xl">
+              Build AI agents that do real work, not just chat.
+            </h1>
+            <p className="mt-6 max-w-2xl text-lg leading-8 text-zinc-400 md:text-xl">
+              VeselyLab designs branded AI experiences for lead capture, support, voice,
+              and workflow automation — engineered for real operations and repeatable scale.
+            </p>
+
+            <div className="mt-10 flex flex-col gap-4 sm:flex-row">
+              <button className="rounded-full bg-cyan-300 px-6 py-3 text-sm font-semibold text-zinc-950 transition hover:scale-[1.01]">
+                See demo system
+              </button>
+              <button className="rounded-full border border-white/15 bg-white/5 px-6 py-3 text-sm font-semibold text-white transition hover:bg-white/10">
+                Explore use cases
+              </button>
+            </div>
+
+            <div className="mt-14 grid gap-4 sm:grid-cols-3">
+              {[
+                ["24/7", "Availability across channels"],
+                ["Voice + Chat", "Unified customer interface"],
+                ["Template-ready", "Built for scaling delivery"],
+              ].map(([value, label]) => (
+                <div key={label} className="rounded-3xl border border-white/10 bg-white/[0.03] p-5 shadow-2xl shadow-black/20">
+                  <div className="text-2xl font-semibold text-white">{value}</div>
+                  <div className="mt-2 text-sm leading-6 text-zinc-400">{label}</div>
+                </div>
+              ))}
+            </div>
+          </div>
+
+          <div className="relative">
+            <div className="rounded-[2rem] border border-white/10 bg-white/[0.04] p-5 shadow-2xl shadow-black/30">
+              <div className="rounded-[1.5rem] border border-white/10 bg-zinc-900/90 p-5">
+                <div className="flex items-center justify-between border-b border-white/10 pb-4">
+                  <div>
+                    <div className="text-sm font-medium text-white">System Overview</div>
+                    <div className="mt-1 text-xs uppercase tracking-[0.18em] text-zinc-500">
+                      Precision editorial tech UI
+                    </div>
+                  </div>
+                  <span className="rounded-full border border-emerald-400/20 bg-emerald-400/10 px-3 py-1 text-xs font-medium text-emerald-300">
+                    Live
+                  </span>
+                </div>
+
+                <div className="mt-5 space-y-4">
+                  {[
+                    "Website visitor starts conversation",
+                    "AI agent qualifies request and captures contact",
+                    "Voice or message follow-up is triggered automatically",
+                    "CRM / workflow handoff completes the loop",
+                  ].map((item, i) => (
+                    <div key={item} className="flex gap-4 rounded-2xl border border-white/8 bg-white/[0.03] p-4">
+                      <div className="mt-0.5 flex h-7 w-7 items-center justify-center rounded-full border border-cyan-300/30 text-xs text-cyan-200">
+                        {i + 1}
+                      </div>
+                      <p className="text-sm leading-6 text-zinc-300">{item}</p>
+                    </div>
+                  ))}
+                </div>
+
+                <div className="mt-5 rounded-2xl border border-dashed border-cyan-300/20 bg-cyan-300/5 p-4">
+                  <div className="text-xs uppercase tracking-[0.18em] text-cyan-200">Core stack</div>
+                  <div className="mt-3 flex flex-wrap gap-2">
+                    {[
+                      "Agent Mode",
+                      "Knowledge Base",
+                      "Voice",
+                      "CRM Actions",
+                      "Templates",
+                      "Human Handoff",
+                    ].map((item) => (
+                      <span
+                        key={item}
+                        className="rounded-full border border-white/10 bg-white/[0.04] px-3 py-1 text-xs text-zinc-300"
+                      >
+                        {item}
+                      </span>
+                    ))}
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section id="capabilities" className="mx-auto max-w-7xl px-6 py-20 lg:px-10">
+          <div className="max-w-2xl">
+            <p className="text-sm uppercase tracking-[0.24em] text-cyan-200">Capabilities</p>
+            <h2 className="mt-4 text-3xl font-semibold tracking-tight text-white md:text-5xl">
+              A calm interface for serious AI operations.
+            </h2>
+            <p className="mt-4 text-base leading-7 text-zinc-400 md:text-lg">
+              The design language is restrained, modular, and outcome-oriented — built to signal trust,
+              clarity, and execution rather than hype.
+            </p>
+          </div>
+
+          <div className="mt-12 grid gap-6 lg:grid-cols-3">
+            {features.map((feature) => (
+              <div
+                key={feature.title}
+                className="rounded-[2rem] border border-white/10 bg-white/[0.03] p-7 shadow-xl shadow-black/20"
+              >
+                <div className="inline-flex rounded-full border border-cyan-300/20 bg-cyan-300/10 px-3 py-1 text-xs uppercase tracking-[0.18em] text-cyan-200">
+                  {feature.tag}
+                </div>
+                <h3 className="mt-5 text-2xl font-semibold text-white">{feature.title}</h3>
+                <p className="mt-4 text-sm leading-7 text-zinc-400">{feature.text}</p>
+              </div>
+            ))}
+          </div>
+        </section>
+
+        <section id="system" className="border-y border-white/10 bg-white/[0.02]">
+          <div className="mx-auto grid max-w-7xl gap-10 px-6 py-20 lg:grid-cols-[0.9fr_1.1fr] lg:px-10">
+            <div>
+              <p className="text-sm uppercase tracking-[0.24em] text-cyan-200">System</p>
+              <h2 className="mt-4 text-3xl font-semibold tracking-tight text-white md:text-5xl">
+                Productized AI infrastructure for modern businesses.
+              </h2>
+              <p className="mt-5 max-w-xl text-base leading-7 text-zinc-400 md:text-lg">
+                Use VeselyLab to design AI roles that can be deployed across clients, industries,
+                and channels with a consistent operating model.
+              </p>
+            </div>
+
+            <div className="grid gap-4 sm:grid-cols-2">
+              {useCases.map((item) => (
+                <div key={item} className="rounded-3xl border border-white/10 bg-zinc-950/60 p-5">
+                  <div className="text-base font-medium text-white">{item}</div>
+                  <div className="mt-2 text-sm leading-6 text-zinc-400">
+                    Structured, branded, and ready to turn into reusable delivery templates.
+                  </div>
+                </div>
+              ))}
+            </div>
+          </div>
+        </section>
+
+        <section className="mx-auto max-w-7xl px-6 py-20 lg:px-10">
+          <div className="flex flex-col gap-10 lg:flex-row lg:items-end lg:justify-between">
+            <div>
+              <p className="text-sm uppercase tracking-[0.24em] text-cyan-200">Method</p>
+              <h2 className="mt-4 text-3xl font-semibold tracking-tight text-white md:text-5xl">
+                From custom build to scalable template.
+              </h2>
+            </div>
+            <p className="max-w-2xl text-base leading-7 text-zinc-400 md:text-lg">
+              The right landing page should not only look premium — it should explain a system,
+              show operational maturity, and make the next step obvious.
+            </p>
+          </div>
+
+          <div className="mt-12 grid gap-6 lg:grid-cols-3">
+            {steps.map((step) => (
+              <div key={step.n} className="rounded-[2rem] border border-white/10 bg-white/[0.03] p-7">
+                <div className="text-sm font-medium tracking-[0.24em] text-cyan-200">{step.n}</div>
+                <h3 className="mt-4 text-2xl font-semibold text-white">{step.title}</h3>
+                <p className="mt-4 text-sm leading-7 text-zinc-400">{step.text}</p>
+              </div>
+            ))}
+          </div>
+        </section>
+
+        <section id="contact" className="mx-auto max-w-5xl px-6 pb-24 lg:px-10">
+          <div className="rounded-[2rem] border border-white/10 bg-gradient-to-b from-white/[0.06] to-white/[0.03] p-8 shadow-2xl shadow-black/30 md:p-12">
+            <div className="max-w-3xl">
+              <p className="text-sm uppercase tracking-[0.24em] text-cyan-200">Start with one role</p>
+              <h2 className="mt-4 text-3xl font-semibold tracking-tight text-white md:text-5xl">
+                Launch an AI system that earns its place in the business.
+              </h2>
+              <p className="mt-5 text-base leading-7 text-zinc-400 md:text-lg">
+                Begin with a focused use case. Turn it into a branded system. Then scale it into a repeatable delivery model.
+              </p>
+            </div>
+
+            <div className="mt-8 flex flex-col gap-4 sm:flex-row">
+              <button className="rounded-full bg-cyan-300 px-6 py-3 text-sm font-semibold text-zinc-950 transition hover:scale-[1.01]">
+                Request a strategy call
+              </button>
+              <button className="rounded-full border border-white/15 bg-white/5 px-6 py-3 text-sm font-semibold text-white transition hover:bg-white/10">
+                View implementation model
+              </button>
+            </div>
+          </div>
+        </section>
+      </main>
+    </div>
+  );
+}
+
+<script src="script.js"></script>
